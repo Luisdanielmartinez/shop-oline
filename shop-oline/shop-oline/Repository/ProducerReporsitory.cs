@@ -9,6 +9,8 @@ namespace shop_oline.Repository
 
     public interface ProducerReporsitory
     {
-
+        IEnumerable<Producer> GetAll();
+        void Insert(Producer producer);
+        Producer GetById(int ProducerId);
     }
 }
